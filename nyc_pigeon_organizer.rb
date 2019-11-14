@@ -37,8 +37,9 @@ def nyc_pigeon_organizer(data)
             id[name][:gender] << genders.to_s
           end
         end
-        binding.pry
 
   end
+  binding.pry
+
 end
 end
