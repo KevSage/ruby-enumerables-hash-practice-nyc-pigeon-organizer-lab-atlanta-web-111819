@@ -40,7 +40,7 @@ def nyc_pigeon_organizer(data)
   end
 end
 data[:lives].each do |hangouts, crew|
-hangouts.each do |pigeon_names|
+crew.each do |pigeon_names|
 binding.pry
 end
 end
