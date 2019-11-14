@@ -41,7 +41,10 @@ def nyc_pigeon_organizer(data)
 end
 data[:lives].each do |hangouts, crew|
 crew.each do |member|
-
+pigeon_list.each do |name|
+  if member === name
+    id[name][:lives] << hangouts.to_s
+  end
 binding.pry
 end
 end
