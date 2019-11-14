@@ -1,3 +1,35 @@
+require 'pry'
+
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  #Create new hash for pigeon descriptions
+  id = {}
+  #We need to isolate the name of the pigeons for the key value, so we must tunnel through the hash
+  #The first hash is color. Within the color hash is a list of colors
+  data.each do |first, color_list|
+    #Within the color list are individual hashes representing lists the first color and the names of the pigeons with that color
+    color_list.each do |color, name_array|
+      name_array.each do |name|
+        id[name] = {:color => [], :gender => [], :lives => []}
+      end
+    end
+  end
+  #Create a variable for the attributes of the pigeosn
+  attribute_keys = id.keys
+  #For each color, list the names of the pigeons with corresponding color
+  data[:color].each do |bird_color, bc_name_list|
+    #Iterate through the list of names(name) for each pigeon(bird_name)
+    bc_name_list.each do |bird_name|
+      #The next lines of code will create the keys for id (Master-Pigeon-List)
+      attribute_keys.each do |item|
+        if bird_name === item
+          id[item][:color] << bird_color.to_s
+        end
+        binding.pry
+
+      end
+    end
+  end
+
+  binding.pry
+
 end
