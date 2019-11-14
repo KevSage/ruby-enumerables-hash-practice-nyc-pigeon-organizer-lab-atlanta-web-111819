@@ -31,10 +31,11 @@ def nyc_pigeon_organizer(data)
 #Colors finished
   end
     data[:gender].each do |genders, kind_list|
-      kind_list.each do |pigeon_list|
+      kind_list.each do |pigeon_name|
         binding.pry
+        pigeon_name.each do |pi_name|
+          binding.pry
 
-        pigeon_list.each do |pigeon_name|
           pigeon_name.each do |pigeon|
           if pigeon_name === pigeon
             id[pigeon][:gender] << gender.to_s
