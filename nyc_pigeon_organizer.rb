@@ -16,9 +16,9 @@ def nyc_pigeon_organizer(data)
   #Create a variable for the attributes of the pigeosn
   pigeon_list = id.keys
   #For each color, list the names of the pigeons with corresponding color
-  data[:color].each do |bird_color, bc_name_list|
+  data[:color].each do |pigeon_color, pc_name_list|
     #Iterate through the list of names(name) for each pigeon(bird_name)
-    bc_name_list.each do |bird_name|
+    pc_name_list.each do |bird_name|
       #The next lines of code will create the keys for id (Master-Pigeon-List)
       pigeon_list.each do |item|
         if bird_name === item
