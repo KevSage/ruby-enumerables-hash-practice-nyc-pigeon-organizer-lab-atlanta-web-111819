@@ -38,7 +38,7 @@ data[:gender].each do |gender, kind|
       end
     end
   end
-
+end
   binding.pry
 
 end
