@@ -46,8 +46,9 @@ pigeon_list.each do |name|
     id[name][:lives] << hangouts.to_s
   end
 end
-binding.pry
 
 end
+binding.pry
+
 end
 end
