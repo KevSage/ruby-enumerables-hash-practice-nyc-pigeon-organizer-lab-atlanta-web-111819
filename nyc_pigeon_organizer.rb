@@ -34,10 +34,11 @@ def nyc_pigeon_organizer(data)
       kind_name_list.each do |pigeon_names|
 
         pigeon_list.each do |name|
-          binding.pry
 
           if pigeon_names === name
             id[name][:gender] << gender.to_s
+            binding.pry
+
           end
         end
 
