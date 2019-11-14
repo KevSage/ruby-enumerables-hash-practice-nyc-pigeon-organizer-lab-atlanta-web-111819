@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
       #The next lines of code will create the keys for id (Master-Pigeon-List)
       pigeon_list.each do |item|
         if bird_name === item
-          id[item][:color] << bird_color.to_s
+          id[item][:color] << pigeon_color.to_s
         end
         binding.pry
 
