@@ -39,6 +39,8 @@ def nyc_pigeon_organizer(data)
         end
   end
 end
+data[:lives].each do |places, hangouts|
+hangouts.each do |pigeon_names|
 binding.pry
 
 end
