@@ -26,9 +26,8 @@ def nyc_pigeon_organizer(data)
         end
 
       end
-
+#ends after first color finished
     end
-    binding.pry
 
   end
 
