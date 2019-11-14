@@ -48,7 +48,8 @@ pigeon_list.each do |name|
 end
 
 end
-binding.pry
 
 end
+binding.pry
+
 end
