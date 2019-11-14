@@ -24,9 +24,10 @@ def nyc_pigeon_organizer(data)
         if pc_pigeon_name === pigeon
           id[pigeon][:color] << pigeon_color.to_s
         end
-        binding.pry
 
       end
+      binding.pry
+
     end
   end
 
