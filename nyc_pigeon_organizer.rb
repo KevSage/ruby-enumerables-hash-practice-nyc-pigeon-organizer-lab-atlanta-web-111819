@@ -30,8 +30,8 @@ def nyc_pigeon_organizer(data)
     end
 #Colors finished
   end
-    data[:gender].each do |gender, kind|
-      kind.each do |pigeon_list|
+    data[:gender].each do |genders, kind_list|
+      kind_list.each do |pigeon_list|
         binding.pry
 
         pigeon_list.each do |pigeon_name|
