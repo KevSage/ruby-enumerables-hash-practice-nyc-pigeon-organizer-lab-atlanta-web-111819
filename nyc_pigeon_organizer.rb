@@ -32,7 +32,7 @@ def nyc_pigeon_organizer(data)
   end
     data[:gender].each do |genders, kind_name_list|
       kind_name_list.each do |pigeon_names|
-        pigeon_list.each do |index|
+        pigeon_list.each do |name|
           binding.pry
           pigeon_name.each do |pigeon|
           if pigeon_name === pigeon
