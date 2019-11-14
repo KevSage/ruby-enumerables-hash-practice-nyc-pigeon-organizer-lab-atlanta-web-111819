@@ -36,6 +36,8 @@ data[:gender].each do |gender, kind|
       if pigeon_name === pigeon
         id[pigeon][:gender] << gender.to_s
       end
+      binding.pry
+
     end
   end
 end
