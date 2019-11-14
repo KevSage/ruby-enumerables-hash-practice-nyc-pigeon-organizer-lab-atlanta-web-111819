@@ -38,8 +38,8 @@ data[:gender].each do |gender, kind|
         id[pigeon][:gender] << gender.to_s
       end
       binding.pry
-
-    
+end
+  end  
   end
 end
 
