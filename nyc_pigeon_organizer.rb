@@ -35,8 +35,9 @@ def nyc_pigeon_organizer(data)
         pigeon_list.each do |name|
           if pigeon_names === name
             id[name][:gender] << genders.to_s
-            binding.pry
           end
+          binding.pry
+
         end
 
   end
